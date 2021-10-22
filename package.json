@@ -1,9 +1,12 @@
 {
+  "homepage" : "http://Neuron-the-Coder.github.io/portfolio",
   "name": "Portfolio:@1.0",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "npx babel --watch src --out-dir . --presets react-app/prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-watch": "^7.6.0"
+    "babel-watch": "^7.6.0",
+    "gh-pages": "^3.2.3"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
